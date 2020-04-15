@@ -1,0 +1,32 @@
+{
+  "name": "calendar-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danyonu/calendar-app.git"
+  },
+  "author": "Daniel Onofreiasa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danyonu/calendar-app/issues"
+  },
+  "homepage": "https://github.com/danyonu/calendar-app#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^15.0.0",
+    "mongoose": "^5.9.9"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "nodemon": "^2.0.3"
+  }
+}
