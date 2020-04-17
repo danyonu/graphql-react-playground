@@ -2,12 +2,15 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const graphqlHttp = require('express-graphql');
 const mongoose = require('mongoose');
+
 const graphqlSchema = require('./graphql/schema/index');
 const graphqlResolver = require('./graphql/resolver/index');
+const isAuth = require('./middleware/is-auth');
 
 const app = express();
 
 app.use(bodyParser.json());
+app.use(isAuth);
 app.use(
   '/graphql',
   graphqlHttp({
@@ -29,22 +32,3 @@ mongoose
     console.log(err);
   });
 
-/*
-// Connection URL
-const url = 'mongodb://localhost:27017';
-
-// Database Name
-const dbName = 'test';
-
-// Create a new MongoClient
-const client = new MongoClient(url);
-
-// Use connect method to connect to the Server
-client.connect(() => {
-  console.log('Connected successfully to server');
-
-  const db = client.db(dbName);
-
-  client.close();
-});
-*/
