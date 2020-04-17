@@ -18,6 +18,9 @@
     "rules": {
       "comma-dangle": "off",
       "no-underscore-dangle": "off",
-      "arrow-body-style": "off"
+      "arrow-body-style": "off",
+      "no-shadow": "off",
+      "no-use-before-define": "off",
+      "no-useless-catch": "off"
     }
 }
