@@ -6,6 +6,6 @@ const rootResolver = {
   ...authResolver,
   ...bookingResolver,
   ...eventsResolver
-}
+};
 
 module.exports = rootResolver;

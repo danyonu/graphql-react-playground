@@ -1,12 +1,13 @@
 {
   "restartable": "rs",
     "ignore": [
-      "node_modules/**/node_modules"
+      "node_modules/**/node_modules",
+      "frontend/**/**"
     ],
     "delay": "2500",
     "env": {
       "NODE_ENV": "development",
-      "PORT": 3000,
+      "PORT": 8000,
       "MONGO_USER": "dany",
       "MONGO_PASSWORD": "hc4gYQF7brmzMeKe",
       "MONGO_DB": "events-react-app"
